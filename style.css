@@ -1,0 +1,40 @@
+/* === RobY Factory - WALL OF GLORY - One Factory #EDE6D6 === */
+:root {
+  --beige: #EDE6D6;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--beige) !important;
+  position: relative;
+  min-height: 100vh;
+  font-family: 'Cairo', sans-serif;
+}
+
+/* الخلفية الشفافة 10% - الماضي حاضر مستقبل */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: url('assets/bg/wall_of_glory.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  opacity: 0.10;
+  filter: blur(1.2px) grayscale(15%);
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* عشان المحتوى يفضل واضح فوق الخلفية */
+.container, .factory, main, .content {
+  position: relative;
+  z-index: 1;
+  background: rgba(237, 230, 214, 0.85);
+  backdrop-filter: blur(2px);
+  border-radius: 16px;
+  padding: 16px;
+}
