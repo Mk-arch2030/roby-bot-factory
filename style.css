@@ -1,16 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;800&display=swap');
 :root{--black:#050806;--panel:#0a0f0c;--gold:#e9c77b;--gold-dim:#8a6a32;--green:#52ff75;--green-dim:#2a5a35;--text:#f3e9d3;--muted:#b8ad94}
-*{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;background:radial-gradient(ellipse at 50% 0%,#1a2e1d 0%,transparent 40%),var(--black);color:var(--text);font-family:'Tajawal',Tahoma,sans-serif;line-height:1.9}
-img{max-width:100%;height:auto;display:block}
-.site-shell{width:min(100%,1100px);margin:auto;padding:12px;border-inline:1px solid #3a2f1a;overflow:hidden}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 50% 0%,#1a2e1d 0%,transparent 40%),var(--black);color:var(--text);font-family:'Tajawal',Tahoma,sans-serif;line-height:1.9}
+.site-shell{width:min(100%,1100px);margin:auto;padding:12px;border-inline:1px solid #3a2f1a}
 .topbar,footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;padding:10px 14px;color:var(--green);border:1px solid var(--green-dim);background:#030705;font:12px monospace;direction:ltr}
-.brand{text-align:center;padding:32px 8px 24px;border:1px solid var(--gold-dim);margin:12px 0;background:radial-gradient(ellipse at center,#1a2e1d44,transparent 70%),#0a0f0c}
-.ankh{color:var(--gold);font-size:44px;text-shadow:0 0 18px #d2a34755}
-h1{margin:0;color:var(--gold);font-family:Georgia,serif;font-weight:800;font-size:clamp(28px,6vw,56px);letter-spacing:3px}
-.hero,.vault,.visitors{text-align:center;padding:28px 16px;border:1px solid #1e2a1f;margin:12px 0;background:var(--panel)}
-h2{color:var(--gold);font-size:clamp(22px,4vw,30px)}
-.pi-grid,.timeline{display:grid;gap:12px;grid-template-columns:1fr}
-@media(min-width:768px){.pi-grid,.timeline{grid-template-columns:1fr 1fr}}
+.brand{text-align:center;padding:32px 8px 24px}.ankh{color:var(--gold);font-size:44px;text-shadow:0 0 18px #d2a34755}
+h1{margin:0;color:var(--gold);font-family:Georgia,serif;font-weight:800;font-size:clamp(28px,6vw,56px);letter-spacing:3px;line-height:1.2}
+.hero,.vault,.visitors{text-align:center;padding:28px 16px}h2{color:var(--gold);font-size:clamp(22px,4vw,30px)}
 .action-link{display:inline-block;padding:12px 24px;color:var(--gold);border:1px solid var(--gold-dim);font-family:monospace;font-weight:bold;text-decoration:none}
 .action-link:hover{background:var(--gold);color:var(--black)}
